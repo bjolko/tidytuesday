@@ -9,16 +9,15 @@ library(ggrepel)
 library(patchwork)
 library(ggpubr)
 library(showtext)
-library(emojifont)
 
-# font_add_google('Merriweather', 'Merriweather')
-# font_add_google('Montserrat', 'Montserrat')
-# showtext_auto()
+font_add_google('Merriweather', 'Merriweather')
+font_add_google('Montserrat', 'Montserrat')
+showtext_auto()
 
 # Data ----
 
-# tuesdata <- tidytuesdayR::tt_load('2021-07-27')
-# olympics <- tuesdata$olympics
+tuesdata <- tidytuesdayR::tt_load('2021-07-27')
+olympics <- tuesdata$olympics
 
 fencing <- olympics %>% 
   filter(sport == 'Fencing') %>% 
@@ -222,7 +221,6 @@ ggsave(
   height = 10, 
   device = cairo_pdf
 )
-
 
 pdftools::pdf_convert(
   '2021-07-27.pdf',
