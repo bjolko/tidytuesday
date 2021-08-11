@@ -22,6 +22,7 @@ highlight_color <- '#BD4B4B'
 backlight_color <- 'gray65'
 line_color <- 'grey87'
 background_color <- 'grey95'
+text_color <- 'grey20'
 
 font_add_google('Crimson Text', 'Crimson Text')
 font_add_google('Shadows Into Light', 'Shadows Into Light')
@@ -63,9 +64,9 @@ investment %>%
     panel.background = element_blank(),
     plot.background = element_rect(fill = background_color, color = NA),
     plot.margin = margin(15, 25, 10, 20),
-    plot.title = element_textbox(color = 'grey20', size = 25, family = 'Crimson Text', width = unit(1, 'npc'), margin = margin(b = 15)),
-    plot.caption = element_text(color = 'grey20', size = 8, family = 'Crimson Text', margin = margin(t = 15, b = 0)),
-    axis.text = element_text(color = 'grey20', size = 14, family = 'Shadows Into Light')
+    plot.title = element_textbox(color = text_color, size = 25, family = 'Crimson Text', width = unit(1, 'npc'), margin = margin(b = 15)),
+    plot.caption = element_text(color = text_color, size = 8, family = 'Crimson Text', margin = margin(t = 15, b = 0)),
+    axis.text = element_text(color = text_color, size = 14, family = 'Shadows Into Light')
   )
 
 # Export ----
