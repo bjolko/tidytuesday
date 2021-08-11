@@ -50,18 +50,21 @@ investment %>%
   ) +
   coord_cartesian(expand = FALSE, clip = 'off') +
   labs(
-    title = glue("Gross investments in <span style='color:{highlight_color};'>Highways and streets</span> and other <span style='color:{backlight_color};'>Transportation categories</span>, 1947-2017")
+    title = glue("Gross investments in <span style='color:{highlight_color};'>Highways and streets</span> and other Transportation categories, 1947-2017"),
+    caption = 'Source: BEA. US Department of Commerce'
   ) +
   theme(
     plot.title.position = 'plot',
+    plot.caption.position = 'plot',
     axis.ticks = element_blank(),
     axis.title = element_blank(),
     panel.grid = element_blank(),
     panel.grid.major.y = element_line(color = line_color),
     panel.background = element_blank(),
     plot.background = element_rect(fill = background_color, color = NA),
-    plot.margin = margin(15, 25, 15, 20),
+    plot.margin = margin(15, 25, 10, 20),
     plot.title = element_textbox(color = 'grey20', size = 25, family = 'Crimson Text', width = unit(1, 'npc'), margin = margin(b = 15)),
+    plot.caption = element_text(color = 'grey20', size = 8, family = 'Crimson Text', margin = margin(t = 15, b = 0)),
     axis.text = element_text(color = 'grey20', size = 14, family = 'Shadows Into Light')
   )
 
