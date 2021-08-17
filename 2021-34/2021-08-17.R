@@ -43,14 +43,13 @@ df %>%
     aes(label = median_words, y = char_type, x = median_words),
     vjust = -1,
     family = 'Space Mono'
-    # size = 4
   ) +
   coord_cartesian(ylim = c(1.5, NA), xlim = c(0.01, NA)) +
   scale_x_continuous(expand = c(0, 0), limits = c(0, 50), breaks = seq(0, 50, 10)) +
   scale_fill_manual(values = legend_colors) + 
   labs(
-    title = 'Number of words per line',
-    subtitle = 'People tend to speak more!',
+    title = 'Star Trek VUI: Number of words per interaction',
+    subtitle = 'People tend to speak more! On average, they use 8 words in a phrase',
     caption = 'Data: SpeechInteraction.org | Elvira Nassirova'
   ) +
   theme(
@@ -63,7 +62,7 @@ df %>%
     axis.text.x = element_text(hjust = 1),
     plot.title.position = 'plot',
     plot.caption.position = 'plot',
-    plot.title = element_text(face = 'bold', size = 30),
+    plot.title = element_text(face = 'bold', size = 25),
     plot.subtitle = element_text(margin = margin(b = 15)),
     plot.caption = element_text(margin = margin(t = 15), size = 8, color = 'gray50'),
     panel.background = element_blank(),
