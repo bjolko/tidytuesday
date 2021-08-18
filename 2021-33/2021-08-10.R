@@ -51,7 +51,7 @@ investment %>%
   ) +
   coord_cartesian(expand = FALSE, clip = 'off') +
   labs(
-    title = glue("Gross investments in <span style='color:{highlight_color};'>Highways and streets</span> and other Transportation categories, 1947-2017"),
+    title = glue("US Gross investments in <span style='color:{highlight_color};'>Highways and streets</span> and other Transportation categories, 1947-2017"),
     caption = 'Source: BEA. US Department of Commerce'
   ) +
   theme(
