@@ -67,7 +67,7 @@ p1 <-
   ggplot(aes(x = weight_g, fill = birth_type)) +
   stat_slab(alpha = alpha_level) +
   labs(
-    title = glue("Weight"),
+    title = glue("Weight, G"),
     subtitle = "We can see that the peaks are in different sides of the distribution. But maybe there is another\nvariable infuencing them?",
   ) +
   scale_x_continuous(expand = c(0, 0), limits = c(-50, 5000), labels = scales::comma, breaks = seq(1000, 5000, 1000)) +
@@ -86,7 +86,7 @@ p2 <-
   ggplot(aes(x = age_max_live_or_dead_y, fill = birth_type)) +
   stat_slab(alpha = alpha_level) +
   labs(
-    title = glue("Age"),
+    title = glue("Age, years"),
     subtitle = "Wild born lemurs representatives are in general older then Captive ones. We should stratify\nbefore comparison"
   ) +
   scale_x_continuous(expand = c(0, 0), limits = c(-0.4, 40), labels = scales::comma, breaks = seq(10, 40, 10)) +
