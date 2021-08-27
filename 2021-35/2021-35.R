@@ -68,7 +68,7 @@ p1 <-
   stat_slab(alpha = alpha_level) +
   labs(
     title = glue("Weight"),
-    subtitle = "We can see significant difference, the peaks are in different sides of the distribution. So maybe\nthere is another variable infuencing them?",
+    subtitle = "We can see that the peaks are in different sides of the distribution. But maybe there is another\nvariable infuencing them?",
   ) +
   scale_x_continuous(expand = c(0, 0), limits = c(-50, 5000), labels = scales::comma, breaks = seq(1000, 5000, 1000)) +
   scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
@@ -87,7 +87,7 @@ p2 <-
   stat_slab(alpha = alpha_level) +
   labs(
     title = glue("Age"),
-    subtitle = "Wild born lemurs representatives are in general older then Captive ones. We should stratify them"
+    subtitle = "Wild born lemurs representatives are in general older then Captive ones. We should stratify\nbefore comparison"
   ) +
   scale_x_continuous(expand = c(0, 0), limits = c(-0.4, 40), labels = scales::comma, breaks = seq(10, 40, 10)) +
   scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
