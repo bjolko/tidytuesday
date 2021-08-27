@@ -117,7 +117,7 @@ p3 <-
   scale_fill_manual(values = legend_colors) +
   labs(
     title = glue("Weight by Age groups"),
-    subtitle = 'Here we go: if analyze by age groups, median Weight is not that different. Note: we excluded\ngroups with small number of observations',
+    subtitle = 'Here we go: if analyze by age groups, median Weight is not that different. Note: I excluded\ngroups with small number of observations',
   ) +
   theme(
     panel.grid.major.x = element_blank(),
