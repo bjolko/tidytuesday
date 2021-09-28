@@ -61,7 +61,7 @@ papers %>%
     axis.title = element_blank(),
     plot.title = element_text(family = title_font, face = 'bold', size = 20, margin = margin(b = 7)),
     plot.subtitle = element_text(family = title_font, size = 15, margin = margin(b = 12)),
-    plot.caption = element_text(size = 8, margin = margin(t = 12)),
+    plot.caption = element_text(size = 9, margin = margin(t = 12)),
     plot.title.position = 'plot',
     plot.caption.position = 'plot',
     axis.ticks = element_blank(),
@@ -88,3 +88,4 @@ pdftools::pdf_convert(
   format = 'png', 
   dpi = 450
 )
+
