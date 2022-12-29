@@ -56,7 +56,7 @@ tlBooks %>%
     axis.text = element_text(color = text_color),
     panel.grid.minor = element_blank(),
     panel.grid.major.y = element_blank(),
-    panel.grid.major.x = element_line(color = text_color),
+    panel.grid.major.x = element_line(color = text_color, linewidth = 0.1),
     panel.background = element_blank(),
     plot.background = element_rect(fill = background_color, color = NA),
     plot.title = element_markdown(family = title_font, size = 36, face = 'bold', margin = margin(l = 5, b = 5, t = 5)),
