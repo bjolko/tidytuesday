@@ -7,6 +7,8 @@ library(glue)
 # Data ----
 tidyweek <- '2021-09-28'
 
+additional_stopwords <- c('evidence', 'policy', 'analysis', 'effect', 'effects', 'market', 'trade')
+
 papers <- 
   readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-09-28/papers.csv') %>% 
   mutate(
@@ -21,8 +23,6 @@ papers <-
   mutate(total_words = sum(n), pct = n / total_words) %>% 
   arrange(-n) %>% 
   slice(1)
-
-additional_stopwords <- c('evidence', 'policy', 'analysis', 'effect', 'effects', 'market', 'trade')
 
 # Chart settings ----
 background_color <- '#f2f7fb'
